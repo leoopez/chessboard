@@ -44,16 +44,25 @@ main {
     background: url(static/150.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    grid-gap: 1px;
 }
 
 piece{
+    position:relative;
     display: block;
     width: 100%;
     height: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
 }
-  
+
+square:nth-child(odd){
+    background-color: rgba(244, 208, 63,0.5);
+}
+
+square:nth-child(even){
+    background-color: rgba(241, 196, 15,0.5);
+}
 .black-rook{
     background-image: url(static/bR.png)
 }
